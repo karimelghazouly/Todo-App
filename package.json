@@ -1,0 +1,24 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "A simple NodeJs app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karimelghazouly/Todo-App.git"
+  },
+  "author": "Karim ElGhazouly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karimelghazouly/Todo-App/issues"
+  },
+  "homepage": "https://github.com/karimelghazouly/Todo-App#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
