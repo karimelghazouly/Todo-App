@@ -53,8 +53,12 @@ module.exports.LoginUser = function(resp, udata)
         if(err)
             throw err;
 
-        if(data == {})
+        console.log(data);
+        if(data == {} || data == null)
+        {
             resp.render("login",{message: "Invalid username"});
+            return;
+        }
         
         bcrypt.compare(udata.password, data.password, function(err, state){
             if(!state)
