@@ -8,10 +8,11 @@
     </head>
 
     <body>
+        
         <div id = "todo-table">
             <form>
-                <input type = "text" name="item" placeholder="Add new item.." required />
-                <button type = "submit"> Add Item</button>
+                <input style = "width: 95%;" type = "text" name="item" placeholder="Add new item.." required />
+                <button type = "submit" style = "margin-left: 35%;"> Add Item</button>
             </form>
             <ul>
                 <% for(var i = 0; i < todos.length; i++){ %>
@@ -19,5 +20,8 @@
                 <% } %>
             </ul>
         </div>
+        <a href="/home">
+            <button style = "margin-left: 35%; background-color: red !important;">Home</button>
+        </a>
     </body>
 </html>
