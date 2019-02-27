@@ -8,7 +8,12 @@ app.use(express.static('public'));
 
 app.get('/',function(req,res){
     res.render('home');
+});
+
+app.get(['/','/home'],function(req,res){
+    res.render('home');
 })
+
 
 authConroller(app);
 todoController(app);
